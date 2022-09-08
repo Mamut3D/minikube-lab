@@ -1,3 +1,6 @@
+---
+# Install minikube and stuff
 - hosts: localhost
   roles:
-    - role: gantsign.minikube
+    - { role: gantsign.minikube,                tags: install }
+    - { role: minikube, minikube_action: start, tags: start }

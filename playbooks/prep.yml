@@ -1,0 +1,5 @@
+---
+# Install required galaxy module
+- hosts: localhost
+  roles:
+    - { role: common, common_action: galaxy_minikube_install }

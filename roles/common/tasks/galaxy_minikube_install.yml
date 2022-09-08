@@ -1,0 +1,4 @@
+- name: Install role gantsign.minikube
+  community.general.ansible_galaxy_install:
+    type: role
+    name: gantsign.minikube
